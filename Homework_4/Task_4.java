@@ -10,11 +10,9 @@ public class Task_4 {
         public BookService(BookRepository bookRepository) {
             this.bookRepository = bookRepository;
         }
-
         public List<Book> getAllBooks() {
             return bookRepository.getAllBooks();
         }
-
         public Book getBookById(int bookId) {
             return bookRepository.getBookById(bookId);
         }

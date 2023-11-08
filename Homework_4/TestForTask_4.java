@@ -28,10 +28,8 @@ class TestForTask_4 {
         List<Book> expectedBooks = Arrays.asList(
                 new Book());
         when(bookRepository.getAllBooks()).thenReturn(expectedBooks);
-
         // Act
         List<Book> actualBooks = bookService.getAllBooks();
-
         // Assert
         assertEquals(expectedBooks, actualBooks);
     }
